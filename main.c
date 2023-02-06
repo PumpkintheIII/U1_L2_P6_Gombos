@@ -8,7 +8,7 @@
 int main(void) { //defines main function
   int lenInch, lenFoot, widInch, widFoot, lenTotal, widTotal;
   //initialize variables as integer
-  int areaInch, areaFoot;
+  float areaInch, areaFoot;
   //initialize variables as integer
   int perimeterLen, perimeterWidth, perimeterInch, perimeterFoot;
   //initialize variables as integer
@@ -37,6 +37,10 @@ int main(void) { //defines main function
   perimeterFoot = perimeterInch/12;
   perimeterInch = perimeterInch - (perimeterFoot*12);
   printf("\nPerimeter: %d\'%d\"", perimeterFoot, perimeterInch);
+
+  //Area:
+  areaFoot = (lenTotal/12) * (widTotal/12);
+  printf("\nArea: %f\'", areaFoot);
   
   return 0;
 }
